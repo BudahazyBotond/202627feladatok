@@ -3,7 +3,7 @@ mysql verzio lekerese
 docker images | grep "mysql"
 
 konténer inditas
-docker run --name mici -e MYSQL_ROOT_PASSWORD=maci -v "$(pwd)/sql" -d mysql:9.7.1
+docker run --name mici -e MYSQL_ROOT_PASSWORD=maci -v "$(pwd)/sql:/sql" -d mysql:9.7.1
 
 bashbe lépés
 docker exec -it mici bash(/sh/mysql)
