@@ -1,0 +1,29 @@
+
+mysql verzio lekerese 
+docker images | grep "mysql"
+
+konténer inditas
+docker run --name mici -e MYSQL_ROOT_PASSWORD=maci -v "$(pwd)/sql" -d mysql:9.7.1
+
+bashbe lépés
+docker exec -it mici bash(/sh/mysql)
+
+mysql
+(#acces denied)
+
+mysql -u(user) -p(password)
+
+mysql -uroot -pmaci
+
+megmutatja a letezo adatbazisaidat
+show databases
+;
+
+adatbazis kivalasztasa
+use db;
+
+tablak listazasa
+show tables;
+
+sql commandok futtatasa
+source /sql/abc.sql;

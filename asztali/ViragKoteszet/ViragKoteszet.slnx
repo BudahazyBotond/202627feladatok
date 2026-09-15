@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ViragKoteszet/ViragKoteszet.csproj" />
+  <Project Path="ViragKoteszet_lib/ViragKoteszet_lib.csproj" />
+</Solution>
