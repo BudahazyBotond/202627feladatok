@@ -1,0 +1,33 @@
+lemásoljuk a környezeti változókat
+cp .env-example .env
+
+felállítja a konténereket
+just init
+
+belépünk a szerviz sh-ba
+docker compose exec backend fish
+
+laravel infodump
+php artisan
+
+letolti a packageket
+php artisan install:api (yes)
+(http://backend.localhost/api)
+
+új kontroller lértehozása
+php artisan make:Controller [ControllerNeve]
+
+CarController.php`
+public function index(){
+    return ["data"=>$this->loadCars()];
+}
+`
+
+api.php`
+use App\Http\Controllers\CarController;
+
+Route::get("cars",
+[CarController::class,"index"]) ->
+name("cars.name");
+`
+url"backend.localhost/api/cars" -> autók
