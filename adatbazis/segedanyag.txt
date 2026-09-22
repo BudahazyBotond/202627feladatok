@@ -16,8 +16,7 @@ mysql -u(user) -p(password)
 mysql -uroot -pmaci
 
 megmutatja a letezo adatbazisaidat
-show databases
-;
+show databases;
 
 adatbazis kivalasztasa
 use db;

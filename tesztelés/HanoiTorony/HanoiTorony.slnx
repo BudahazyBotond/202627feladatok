@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="HanoiTorony/HanoiTorony.csproj" />
+  <Project Path="HanoiTorony_lib/HanoiTorony_lib.csproj" />
+  <Project Path="HanoiTorony_tests/HanoiTorony_tests.csproj" />
+</Solution>
