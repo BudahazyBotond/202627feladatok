@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Teasdobozok/Teasdobozok.csproj" />
+  <Project Path="Teasdobozok_lib/Teasdobozok_lib.csproj" />
+</Solution>
