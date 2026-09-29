@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MikulasCukraszda/MikulasCukraszda.csproj" />
+  <Project Path="MikulasCukraszda_lib/MikulasCukraszda_lib.csproj" />
+</Solution>
