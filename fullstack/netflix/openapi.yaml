@@ -1,0 +1,238 @@
+openapi: 3.1.0
+info:
+  title: Netflix Toplista API
+  version: 1.0.0
+  description: Laravel Query Builder alapú API a Netflix toplisták lekérdezésére.
+
+servers:
+  - url: http://backend.vm1.test
+    description: VM1 backend
+paths:
+  /api/toplist:
+    get:
+      operationId: toplist.index
+      tags:
+        - Toplist
+      summary: Teljes toplista lekérése
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ToplistItem'
+              example: {"data":[{"id":2,"week":"2023-12-31","category":"Films (English)","weekly_rank":1,"show_title":"Rebel Moon — Part One: A Child of Fire","weekly_hours_viewed":77000000,"cumulative_weeks_in_top_ten":2},{"id":3,"week":"2023-12-31","category":"Films (English)","weekly_rank":2,"show_title":"Leave the World Behind","weekly_hours_viewed":34600000,"cumulative_weeks_in_top_ten":4},{"id":4,"week":"2023-12-31","category":"Films (English)","weekly_rank":3,"show_title":"Pretty Woman","weekly_hours_viewed":16600000,"cumulative_weeks_in_top_ten":1}]}
+
+  /api/toplist/categories:
+    get:
+      operationId: toplist.categories
+      tags:
+        - Toplist
+      summary: Kategóriák listázása
+
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: string
+              example: {"data":["Films (English)","Films (Non-English)","TV (English)","TV (Non-English)"]}
+
+
+  /api/toplist/films:
+    get:
+      operationId: toplist.films
+      tags:
+        - Toplist
+      summary: Filmek listázása
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ToplistItem'
+              example: {"data":[{"id":2,"week":"2023-12-31","category":"Films (English)","weekly_rank":1,"show_title":"Rebel Moon — Part One: A Child of Fire","weekly_hours_viewed":77000000,"cumulative_weeks_in_top_ten":2},{"id":3,"week":"2023-12-31","category":"Films (English)","weekly_rank":2,"show_title":"Leave the World Behind","weekly_hours_viewed":34600000,"cumulative_weeks_in_top_ten":4},{"id":4,"week":"2023-12-31","category":"Films (English)","weekly_rank":3,"show_title":"Pretty Woman","weekly_hours_viewed":16600000,"cumulative_weeks_in_top_ten":1}]}
+
+
+  /api/toplist/tvs:
+    get:
+      operationId: toplist.tvs
+      tags:
+        - Toplist
+      summary: Sorozatok listázása
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ToplistItem'
+              example: {"data":[{"id":22,"week":"2023-12-31","category":"TV (English)","weekly_rank":1,"show_title":"Ricky Gervais: Armageddon","weekly_hours_viewed":8400000,"cumulative_weeks_in_top_ten":1},{"id":23,"week":"2023-12-31","category":"TV (English)","weekly_rank":2,"show_title":"My Life With the Walter Boys","weekly_hours_viewed":41400000,"cumulative_weeks_in_top_ten":4},{"id":24,"week":"2023-12-31","category":"TV (English)","weekly_rank":3,"show_title":"The Crown","weekly_hours_viewed":31600000,"cumulative_weeks_in_top_ten":7},{"id":25,"week":"2023-12-31","category":"TV (English)","weekly_rank":4,"show_title":"Obliterated","weekly_hours_viewed":17800000,"cumulative_weeks_in_top_ten":5}]}
+
+
+  /api/toplist/popular:
+    get:
+      operationId: toplist.popular
+      tags:
+        - Toplist
+      summary: Népszerű műsorok lekérése
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ToplistItem'
+              example: {"data":[{"id":1582,"week":"2023-04-02","category":"TV (English)","weekly_rank":1,"show_title":"The Night Agent","weekly_hours_viewed":216390000,"cumulative_weeks_in_top_ten":2},{"id":2062,"week":"2023-01-08","category":"TV (English)","weekly_rank":1,"show_title":"Ginny & Georgia","weekly_hours_viewed":180470000,"cumulative_weeks_in_top_ten":1},{"id":1622,"week":"2023-03-26","category":"TV (English)","weekly_rank":1,"show_title":"The Night Agent","weekly_hours_viewed":168710000,"cumulative_weeks_in_top_ten":1},{"id":2022,"week":"2023-01-15","category":"TV (English)","weekly_rank":1,"show_title":"Ginny & Georgia","weekly_hours_viewed":162720000,"cumulative_weeks_in_top_ten":2},{"id":1342,"week":"2023-05-14","category":"TV (English)","weekly_rank":1,"show_title":"Queen Charlotte: A Bridgerton Story","weekly_hours_viewed":158680000,"cumulative_weeks_in_top_ten":2},{"id":1186,"week":"2023-06-11","category":"TV (English)","weekly_rank":5,"show_title":"Manifest","weekly_hours_viewed":18180000,"cumulative_weeks_in_top_ten":25},{"id":1340,"week":"2023-05-14","category":"Films (Non-English)","weekly_rank":9,"show_title":"All Quiet on the Western Front","weekly_hours_viewed":1280000,"cumulative_weeks_in_top_ten":23}]}
+
+
+
+
+
+  /api/toplist/week/{week}:
+    get:
+      operationId: toplist.week
+      tags:
+        - Toplist
+      summary: Heti toplista lekérése
+      parameters:
+        - name: week
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^((19[0-9]{2}|20[0-9]{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$'
+            example: 2023-11-05
+        - name: order_by
+          in: query
+          required: false
+          description: Rendezés típusa
+          schema:
+            type: string
+            enum:
+              - category
+              - weekly_rank
+              - weekly_hours_viewed
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      week:
+                        type: string
+                      items:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/ToplistItem'
+              example: {"data":{"week":"2023-11-05","items":[{"id":322,"week":"2023-11-05","category":"Films (English)","weekly_rank":1,"show_title":"Locked In","weekly_hours_viewed":28800000,"cumulative_weeks_in_top_ten":1},{"id":323,"week":"2023-11-05","category":"Films (English)","weekly_rank":2,"show_title":"Pain Hustlers","weekly_hours_viewed":31700000,"cumulative_weeks_in_top_ten":2},{"id":324,"week":"2023-11-05","category":"Films (English)","weekly_rank":3,"show_title":"Cold Pursuit","weekly_hours_viewed":17300000,"cumulative_weeks_in_top_ten":2},{"id":325,"week":"2023-11-05","category":"Films (English)","weekly_rank":4,"show_title":"Spider-Man: Across the Spider-Verse","weekly_hours_viewed":20100000,"cumulative_weeks_in_top_ten":1}]}}
+
+
+  /api/toplist/top1/{week}:
+    get:
+      operationId: toplist.top1
+      tags:
+        - Toplist
+      summary: Legnézettebb angol nyelvű sorozat címe adott héten
+      parameters:
+        - name: week
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^((19[0-9]{2}|20[0-9]{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$'
+            example: 2023-04-09
+      responses:
+        '200':
+          description: Sikeres válasz
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  week:
+                    type: string
+                  title:
+                    type: string
+              example: {"data":{"week":"2023-04-09","title":"The Night Agent"}}
+
+components:
+  schemas:
+    ToplistItem:
+      type: object
+      required:
+        - id
+        - title
+        - category
+        - weekly_rank
+        - weekly_hours_viewed
+        - cumulative_weeks_in_top_ten
+        - week
+        - language
+      properties:
+        id:
+          type: integer
+          example: 1
+          description: Azonosító
+        title:
+          type: string
+          example: Stranger Things
+          description: Műsor címe
+        category:
+          type: string
+          example: TV - Sci-Fi
+          description: Kategória (Films, TV, stb.)
+        weekly_rank:
+          type: integer
+          example: 1
+          description: Heti rangsorban elfoglalt hely
+        weekly_hours_viewed:
+          type: integer
+          example: 200000000
+          description: Heti nézett órák száma
+        cumulative_weeks_in_top_ten:
+          type: integer
+          example: 30
+          description: Összes hét a top10-ben
+        week:
+          type: string
+          format: date
+          pattern: '^((19[0-9]{2}|20[0-9]{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]))$'
+          example: 2025-10-06
+          description: Dátum (éééé-hh-nn formátumban)
+        language:
+          type: string
+          example: English
+          description: Nyelv (pl. English, Spanish)

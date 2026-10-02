@@ -1,0 +1,59 @@
+const formatDate = (dateStr) => {
+    if (!dateStr) return '-';
+    const date = new Date(dateStr);
+    if (isNaN(date.getTime())) return '-';
+
+    return new Intl.DateTimeFormat('hu-HU', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+    }).format(date);
+}
+
+
+
+const baseClasses =
+    'inline-flex items-center justify-center gap-2 ' +
+    'rounded-md border px-4 py-2 text-sm font-medium ' +
+    'transition-colors duration-150 cursor-pointer ' +
+    'focus-visible:outline-none focus-visible:ring-2 ' +
+    'focus-visible:ring-offset-2 ' +
+    'disabled:cursor-not-allowed disabled:opacity-50'
+
+const variants = {
+    primary:
+        'border-transparent bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 focus-visible:ring-blue-500',
+    secondary:
+        'border-transparent bg-gray-500/10 text-gray-500 hover:bg-gray-500/20 focus-visible:ring-gray-500',
+    success:
+        'border-transparent bg-green-500/10 text-green-500 hover:bg-green-500/20 focus-visible:ring-green-500',
+    danger:
+        'border-transparent bg-red-500/10 text-red-500 hover:bg-red-500/20 focus-visible:ring-red-500',
+    warning:
+        'border-transparent bg-yellow-500/10 text-yellow-500 hover:bg-yellow-500/20 focus-visible:ring-yellow-500',
+    info:
+        'border-transparent bg-cyan-500/10 text-cyan-500 hover:bg-cyan-500/20 focus-visible:ring-cyan-500',
+    light:
+        'border-transparent bg-gray-100 text-gray-700 hover:bg-gray-200 focus-visible:ring-gray-400',
+    dark:
+        'border-transparent bg-gray-800/10 text-gray-800 hover:bg-gray-800/20 focus-visible:ring-gray-800',
+
+    'outline-primary':
+        'border-blue-500 bg-transparent text-blue-500 hover:bg-blue-500/10 focus-visible:ring-blue-500',
+    'outline-secondary':
+        'border-gray-500 bg-transparent text-gray-500 hover:bg-gray-500/10 focus-visible:ring-gray-500',
+    'outline-success':
+        'border-green-500 bg-transparent text-green-500 hover:bg-green-500/10 focus-visible:ring-green-500',
+    'outline-danger':
+        'border-red-500 bg-transparent text-red-500 hover:bg-red-500/10 focus-visible:ring-red-500',
+    'outline-warning':
+        'border-yellow-500 bg-transparent text-yellow-500 hover:bg-yellow-500/10 focus-visible:ring-yellow-500',
+    'outline-info':
+        'border-cyan-500 bg-transparent text-cyan-500 hover:bg-cyan-500/10 focus-visible:ring-cyan-500',
+    'outline-light':
+        'border-gray-300 bg-transparent text-gray-700 hover:bg-gray-100 focus-visible:ring-gray-400',
+    'outline-dark':
+        'border-gray-800 bg-transparent text-gray-800 hover:bg-gray-800/10 focus-visible:ring-gray-800',
+}

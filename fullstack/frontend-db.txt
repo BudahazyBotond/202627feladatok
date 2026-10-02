@@ -1,0 +1,81 @@
+git clone https://github.com/rcsnjszg/fullstack2627.git .
+git remote remove origin
+cp .env.example .env (DOMAIN=localhost)
+just init
+
+`browser`
+pma.localhost
+
+adatbázis kiválasztása (rá kell noymni a bal oldalt)
+importálás
+
+`code`
+$builder = DB::table("cars"); //=SELECT * FROM cars
+
+$cars = $builder->get(); //Collectiont ad vissza
+echo $cars->first()->model;
+
+$car = $builder->first(); //Classt ad vissza az első kocsiról
+echo $car->model;
+//van még value() = értéket ad vissza, pluck() = oszlopot ad vissza
+
+//debug methods: toSql(), getBindings(), toRawSql(), dump()
+
+DB:enableQueryLog(); // engedélyezi a lekérdezési logolást
+$queries = DB:getQueryLog(); //visszaadja az eddigi lekérdezéseket
+
+//ha feltétel
+$builder = DB:table("cars");
+$builder->where("fuel","=","benzin");
+
+//ha és ha
+$builder->where("fuel","=","benzin");
+$builder->where("manufacturer","=","opel");
+
+//ha vagy ha
+$builder->where("fuel","=","benzin");
+$builder->orWhere("manufacturer","=","opel");
+
+//select és orderby
+$builder->where("fuel","=","benzin")
+        ->select("manufacturer","plate_number")
+        -orderBy("manufacturer");
+$cars = $builder->get();
+
+//min max
+$minCons = $builder->min("consumption");
+$maxCons = $builder->max("consumption");
+
+`terminal`
+php artisan install:api (yes)
+php artisan make:controller ImageController
+
+`code`
+`ImageController.php`
+class ImageController extends Controller
+{
+    public function index(Request $request):JsonResponse {
+    $queryBuilder = DB::table("images");
+    //$queryBuilder->where("tag","=","latest");
+    //$queryBuilder->where("repository","like","docs/%");
+    if( $request->filled("orderBy") ) {
+        $queryBuilder->orderBy($request->query("orderBy"));
+    }
+    return response()->json([
+        "data"=> $queryBuilder->get(),
+    ]);
+    }
+
+    public function show(int $id):JsonResponse {
+        $queryBuilder = DB::table("images")
+            ->where("id", $id);
+
+        return response()->json([
+            "data"=> $queryBuilder->firstOrFail(),
+        ]);
+    }
+}
+
+`api.php`
+Route::get("/images",[ImageController::class,"index"])->name("images.name");
+Route::get("/images/{id}",[ImageController::class,"show"])->name("images.show");
