@@ -1,3 +1,6 @@
+zip
+zip -r mappa.zip mappa -x mappa/backend/vendor\* mappa/frontend/node_modules\* mappa/responsive/node_modules\*  
+
 git clone https://github.com/rcsnjszg/fullstack2627.git .
 git remote remove origin
 cp .env.example .env (DOMAIN=localhost)
