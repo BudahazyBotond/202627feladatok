@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BarkacsAruhaz/BarkacsAruhaz.csproj" />
+  <Project Path="BarkacsAruhaz_lib/BarkacsAruhaz_lib.csproj" />
+</Solution>

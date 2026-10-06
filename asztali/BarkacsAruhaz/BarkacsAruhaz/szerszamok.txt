@@ -1,0 +1,13 @@
+Azonosito;Megnevezes;Kategoria;Ar
+SZ001;Csavarhúzó készlet;kéziszerszám;4500
+SZ002;Kalapács;kéziszerszám;3800
+SZ003;Villáskulcs készlet;kéziszerszám;7200
+SZ004;Akkumulátoros fúró;gépi szerszám;28500
+SZ005;Fogó;kéziszerszám;4200
+SZ006;Sarokcsiszoló;gépi szerszám;24900
+SZ007;Mérőszalag;kéziszerszám;2500
+SZ008;Dekopírfűrész;gépi szerszám;19800
+SZ009;Állítható csavarkulcs;kéziszerszám;5600
+SZ010;Fúrószár készlet;kéziszerszám;8900
+SZ011;Elektromos csiszoló;gépi szerszám;17500
+SZ012;Bitkészlet;kéziszerszám;6400
