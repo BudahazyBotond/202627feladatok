@@ -26,3 +26,25 @@ show tables;
 
 sql commandok futtatasa
 source /sql/abc.sql;
+
+
+
+Felhasznalo kezeles
+
+felhasznalo letrehozasa
+CREATE USER IF NOT EXISTS 'nev'@'honnan csatlakozik'
+IDENTIFIED BY 'jelszo'
+
+felhasznalo torles
+DROP USER 'nev'@'honnan csatlakozik'
+
+(ALL PRIVILEGES minden)
+(SELECT adaok lekerdezese jogosultsag)
+(CREATE az egy jogosultsag a letrehozashoz)
+jogosultsag hozzaadasa 
+GRANT jog ON 'adatbazis' . *
+TO 'felhasznalo'@'localhost'
+
+visszavonni 
+REVOKE ALL PRIVILEGES
+ON 'adatbazis'.*

@@ -7,9 +7,9 @@ namespace Szepseg_lib
     public class Vendegek
     {
         private List<Vendeg> _list;
-        public Vendegek(List<Vendeg> list)
+        public Vendegek(IEnumerable<Vendeg> list)
         {
-            _list = list;
+            _list = list.ToList();
         }
 
         public Vendeg this[int id]
