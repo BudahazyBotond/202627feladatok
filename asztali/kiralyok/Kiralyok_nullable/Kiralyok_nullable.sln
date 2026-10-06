@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiralyok_nullable", "Kiralyok_nullable\Kiralyok_nullable.csproj", "{CA21D3A4-11F7-4148-AE5A-48850E7BD118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiralyok_lib", "Kiralyok_lib\Kiralyok_lib.csproj", "{09E1A47D-C090-42B4-A4EF-6CFBE36EA536}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA21D3A4-11F7-4148-AE5A-48850E7BD118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA21D3A4-11F7-4148-AE5A-48850E7BD118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA21D3A4-11F7-4148-AE5A-48850E7BD118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA21D3A4-11F7-4148-AE5A-48850E7BD118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E1A47D-C090-42B4-A4EF-6CFBE36EA536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E1A47D-C090-42B4-A4EF-6CFBE36EA536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E1A47D-C090-42B4-A4EF-6CFBE36EA536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E1A47D-C090-42B4-A4EF-6CFBE36EA536}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D92F325E-CA42-4478-B260-B32B84D255BB}
+	EndGlobalSection
+EndGlobal

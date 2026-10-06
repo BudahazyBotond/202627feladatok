@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabor", "Tabor\Tabor.csproj", "{8EA4D968-1FFE-4058-9F34-E62F21345921}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabor_lib", "Tabor_lib\Tabor_lib.csproj", "{BA6BD619-147D-46AF-89A6-65E9A55B2AD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EA4D968-1FFE-4058-9F34-E62F21345921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA4D968-1FFE-4058-9F34-E62F21345921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA4D968-1FFE-4058-9F34-E62F21345921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA4D968-1FFE-4058-9F34-E62F21345921}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA6BD619-147D-46AF-89A6-65E9A55B2AD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6BD619-147D-46AF-89A6-65E9A55B2AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6BD619-147D-46AF-89A6-65E9A55B2AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6BD619-147D-46AF-89A6-65E9A55B2AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B4011A2-F511-4968-81E4-866DC0B9B49F}
+	EndGlobalSection
+EndGlobal

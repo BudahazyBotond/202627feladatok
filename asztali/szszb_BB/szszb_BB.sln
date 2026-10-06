@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szszb_BB", "szszb_BB\szszb_BB.csproj", "{CCEC7B6C-D343-4E37-9E7B-62AD7A63BAC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szszb_lib", "szszb_lib\szszb_lib.csproj", "{8C4C8433-5B19-4B7D-AD1D-55994EDFFA8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCEC7B6C-D343-4E37-9E7B-62AD7A63BAC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCEC7B6C-D343-4E37-9E7B-62AD7A63BAC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCEC7B6C-D343-4E37-9E7B-62AD7A63BAC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCEC7B6C-D343-4E37-9E7B-62AD7A63BAC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4C8433-5B19-4B7D-AD1D-55994EDFFA8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4C8433-5B19-4B7D-AD1D-55994EDFFA8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4C8433-5B19-4B7D-AD1D-55994EDFFA8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4C8433-5B19-4B7D-AD1D-55994EDFFA8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {114E3612-A225-46B7-B13C-D970EFFE09E6}
+	EndGlobalSection
+EndGlobal

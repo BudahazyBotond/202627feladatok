@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hataratkeles", "Hataratkeles\Hataratkeles.csproj", "{5C8918F7-2AB9-4E64-8D50-0FAB428A6133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hataratkeles_lib", "hataratkeles_lib\Hataratkeles_lib.csproj", "{5899B8A5-9F3A-4A9C-A371-372A11EA1DAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C8918F7-2AB9-4E64-8D50-0FAB428A6133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8918F7-2AB9-4E64-8D50-0FAB428A6133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8918F7-2AB9-4E64-8D50-0FAB428A6133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8918F7-2AB9-4E64-8D50-0FAB428A6133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5899B8A5-9F3A-4A9C-A371-372A11EA1DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5899B8A5-9F3A-4A9C-A371-372A11EA1DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5899B8A5-9F3A-4A9C-A371-372A11EA1DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5899B8A5-9F3A-4A9C-A371-372A11EA1DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A43573B-035F-4395-BE75-B579C39DAAFD}
+	EndGlobalSection
+EndGlobal

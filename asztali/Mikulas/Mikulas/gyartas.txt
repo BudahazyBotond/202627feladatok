@@ -1,0 +1,6 @@
+Azonosito;Tipus;ElkeszitesiIdo
+p;plüss;25
+j;jármű;25
+b;baba;20
+k1;kiegészítő;10
+k2;kiegészítő;15

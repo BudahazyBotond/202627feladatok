@@ -1,0 +1,7 @@
+﻿név;foglalkozás;nemzetiség;világhírű;nem
+Török Ferenc;sportoló;magyar;igen;férfi
+Ariana Grande;énekes;amerikai;igen;nő
+Avril Lavigne;énekes;kanadai;igen;nő
+Jon Bon Jovi;zenész;amerikai;igen;férfi
+Tom Brady;sportoló;amerikai;igen;férfi
+Eminem;zenész;amerikai;igen;férfi

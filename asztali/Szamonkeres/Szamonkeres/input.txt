@@ -1,0 +1,5 @@
+d;50;200;OOP
+b;35;e;Eletjatek
+d;50;150;AB
+b;30;cs;Projekt
+d;25;300;Probavizsga

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36930.0 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celeb", "Celeb\Celeb.csproj", "{278989DB-02E0-4625-B03F-D4E9C7B898C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Celeb_lib", "Celeb_lib\Celeb_lib.csproj", "{AADAC198-8330-4BFB-8BA1-7C2D0824C656}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{278989DB-02E0-4625-B03F-D4E9C7B898C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278989DB-02E0-4625-B03F-D4E9C7B898C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278989DB-02E0-4625-B03F-D4E9C7B898C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278989DB-02E0-4625-B03F-D4E9C7B898C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AADAC198-8330-4BFB-8BA1-7C2D0824C656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AADAC198-8330-4BFB-8BA1-7C2D0824C656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AADAC198-8330-4BFB-8BA1-7C2D0824C656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AADAC198-8330-4BFB-8BA1-7C2D0824C656}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B29F1744-9AFD-4D63-8075-0A0B2D855A11}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,66 @@
+﻿<Window x:Class="Tabor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tabor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="380"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Név: " FontSize="16" Margin="30"/>
+            <TextBox x:Name="nev_tb" Grid.Column="1" Height="30"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Szint: " FontSize="16" Margin="30"/>
+            <ComboBox x:Name="szint_cb" Grid.Column="1" Height="30" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center">
+                <ComboBoxItem Content="kezdő" IsSelected="True" FontSize="16"/>
+                <ComboBoxItem Content="középhaladó" FontSize="16"/>
+                <ComboBoxItem Content="haladó" FontSize="16"/>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="Nyelv: " FontSize="16" Margin="30"/>
+            <ComboBox x:Name="nyelv_cb" Grid.Column="1" Height="30" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Rögzít" Grid.Column="0" Width="130" Height="50" Click="Rogzit_Click"/>
+            <Button Content="Mégsem" Grid.Column="1" Width="130" Height="50" Click="Megsem_Click"/>
+        </Grid>
+        <CheckBox x:Name="bentlakasos_chb" Content="Bentlakásos" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center"/>
+        <GroupBox Grid.Row="1" Grid.Column="2" Header="Nem:">
+            <StackPanel>
+                <RadioButton x:Name="fiu_rb" Content="Fiú" IsChecked="True"/>
+                <RadioButton x:Name="lany_rb" Content="Lány"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>

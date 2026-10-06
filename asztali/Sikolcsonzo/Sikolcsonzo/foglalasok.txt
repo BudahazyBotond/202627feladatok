@@ -1,0 +1,12 @@
+Kezdet;Napok;EszkozID;Berlo
+2024.12.20;6;MA1;Denes Anna
+2024.12.20;8;MA1;Dobos Andras
+2024.12.24;4;MA1;Varga Zsuzsa
+2025.01.20;4;MA1;Gonda Gyorgy
+2025.01.20;8;MA1;Madarasz Edina
+2025.02.03;8;MA1;Nagy Norbert
+2025.02.12;4;RL1;Dobos Andras
+2025.02.21;5;RL1;Gonda Gyorgy
+2025.02.27;3;RL1;Varga Zsuzsa
+2025.03.01;8;RL1;Dobos Andras
+2025.04.13;9;DAR;Nagy Norbert

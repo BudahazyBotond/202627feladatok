@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Eletjatek/Eletjatek.csproj" />
+  <Project Path="EletjatekGUI/EletjatekGUI.csproj" />
+</Solution>

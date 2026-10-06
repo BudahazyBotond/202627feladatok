@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="kepek\csinling.jpg" />
+    <None Remove="kepek\icon.png" />
+    <None Remove="kepek\orias.jpg" />
+    <None Remove="kepek\panda-fur.jpg" />
+    <None Remove="kepek\voros.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="kepek\csinling.jpg" />
+    <Resource Include="kepek\icon.png" />
+    <Resource Include="kepek\orias.jpg" />
+    <Resource Include="kepek\panda-fur.jpg" />
+    <Resource Include="kepek\voros.jpg" />
+  </ItemGroup>
+
+</Project>

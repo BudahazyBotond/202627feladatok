@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darts", "Darts\Darts.csproj", "{EA57B089-CA04-4408-B2F3-5284731516D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darts_lib", "Darts_lib\Darts_lib.csproj", "{7DD21137-F9FC-46D2-947D-E90157524470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA57B089-CA04-4408-B2F3-5284731516D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA57B089-CA04-4408-B2F3-5284731516D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA57B089-CA04-4408-B2F3-5284731516D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA57B089-CA04-4408-B2F3-5284731516D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD21137-F9FC-46D2-947D-E90157524470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD21137-F9FC-46D2-947D-E90157524470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD21137-F9FC-46D2-947D-E90157524470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD21137-F9FC-46D2-947D-E90157524470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29888390-2CF6-4E60-BEE8-9763258CDB09}
+	EndGlobalSection
+EndGlobal

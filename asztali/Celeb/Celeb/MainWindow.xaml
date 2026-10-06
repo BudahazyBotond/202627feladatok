@@ -1,0 +1,77 @@
+﻿<Window x:Class="Celeb.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Celeb"
+        mc:Ignorable="d"
+        Title="Híres emberek" Height="450" Width="800" MinWidth="400">
+    <WrapPanel>
+        <Grid MinWidth="390">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Label Content="Név:" Grid.Row="1" Grid.Column="1"/>
+            <Label Content="Foglalkozás:" Grid.Row="3" Grid.Column="1"/>
+            <Label Content="Nemzetiség:" Grid.Row="5" Grid.Column="1"/>
+            <TextBox x:Name="tb_nev" Grid.Row="1" Grid.Column="3"/>
+            <ComboBox x:Name="cB_foglalkozas" Grid.Row="3" Grid.Column="3">
+                <ComboBoxItem IsSelected="True" Content="Színész"/>
+                <ComboBoxItem Content="Zenész"/>
+                <ComboBoxItem Content="Énekes"/>
+                <ComboBoxItem Content="Sportoló"/>
+            </ComboBox>
+            <ComboBox x:Name="cB_nemzetiseg" Grid.Row="5" Grid.Column="3"/>
+        </Grid>
+        <Grid MinWidth="390">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <CheckBox x:Name="ch_vilaghiru" Content="Világhírű" Grid.Row="1" Grid.Column="1"/>
+            <GroupBox Header="Nem" Grid.Row="3" Grid.Column="1">
+                <StackPanel>
+                    <RadioButton x:Name="rB_Ferfi" Content="Férfi" IsChecked="True"/>
+                    <RadioButton x:Name="rB_No" Content="Nő"/>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+        <Grid MinWidth="390">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="20"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="btn_Rogzit" Content="Rögzít" Grid.Row="1" Grid.Column="1" Width="100" Padding="10" Click="btn_Rogzit_Click"/>
+            <Button x:Name="btn_Megsem" Content="Mégsem" Grid.Row="1" Grid.Column="3" Width="100" Padding="10" Click="btn_Megsem_Click"/>
+        </Grid>
+    </WrapPanel>
+</Window>

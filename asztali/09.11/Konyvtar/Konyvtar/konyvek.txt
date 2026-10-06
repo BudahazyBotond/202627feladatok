@@ -1,0 +1,94 @@
+cim;szerzo;kiadas_eve;kolcsonozhetoseg
+A Gyűrűk Ura - A Gyűrű Szövetsége;J.R.R. Tolkien;2002;igen
+A Gyűrűk Ura - A két torony;J.R.R. Tolkien;2002;igen
+A Gyűrűk Ura - A király visszatér;J.R.R. Tolkien;2002;nem
+Harry Potter és a bölcsek köve;J.K. Rowling;1997;igen
+Harry Potter és a Titkok Kamrája;J.K. Rowling;1998;igen
+Harry Potter és a Főnix Rendje;J.K. Rowling;2003;nem
+A Szél Árnyéka;Patrick Rothfuss;2007;igen
+A Hobbit;J.R.R. Tolkien;1937;igen
+1984;George Orwell;1949;igen
+Fahrenheit 451;Ray Bradbury;1953;igen
+Az Alkimista;Paulo Coelho;1988;igen
+A Mester és Margarita;Mihail Bulgakov;1967;igen
+A Kisherceg;Antoine de Saint-Exupéry;1943;igen
+Az Öreg Halász és a Tenger;Ernest Hemingway;1951;igen
+A Gyűrűk Ura - Különleges kiadás;J.R.R. Tolkien;2002;igen
+A Sötét Torony;Stephen King;1982;igen
+A Kék Fény;Kurt Vonnegut;1969;igen
+A Tűz és Jég Dala;George R.R. Martin;1996;igen
+A Föld alatti Vasút;Colson Whitehead;2016;igen
+Az Éjjeli Őrjárat;Terry Pratchett;1989;igen
+Az Emberi Faj;Yuval Noah Harari;2011;igen
+A Bűn és Bűnhődés;Fjodor Dosztojevszkij;1866;igen
+A Vörös és a Fekete;Stendhal;1830;igen
+A Képzelet Világa;J.K. Rowling;2001;igen
+A Sárkányok Tánca;George R.R. Martin;2011;igen
+A Szépség és a Szörnyeteg;Gabrielle-Suzanne Barbot de Villeneuve;1740;igen
+A Szürke Övezet;Margaret Atwood;1985;igen
+A Kék Fény;Kurt Vonnegut;1969;igen
+A Két Torony;J.R.R. Tolkien;1954;igen
+A Képzelet Világa;J.K. Rowling;2001;igen
+A Tűz és Jég Dala;George R.R. Martin;1996;igen
+A Gyűrűk Ura - A Gyűrű Szövetsége;J.R.R. Tolkien;2002;igen
+A Gyűrűk Ura - A két torony;J.R.R. Tolkien;2002;igen
+A Gyűrűk Ura - A király visszatér;J.R.R. Tolkien;2002;nem
+Harry Potter és a bölcsek köve;J.K. Rowling;1997;igen
+Harry Potter és a Titkok Kamrája;J.K. Rowling;1998;igen
+Harry Potter és a Főnix Rendje;J.K. Rowling;2003;nem
+A Szél Árnyéka;Patrick Rothfuss;2007;igen
+A Hobbit;J.R.R. Tolkien;1937;igen
+1984;George Orwell;1949;igen
+Fahrenheit 451;Ray Bradbury;1953;igen
+Az Alkimista;Paulo Coelho;1988;igen
+A Mester és Margarita;Mihail Bulgakov;1967;igen
+A Kisherceg;Antoine de Saint-Exupéry;1943;igen
+Az Öreg Halász és a Tenger;Ernest Hemingway;1951;igen
+A Gyűrűk Ura - Különleges kiadás;J.R.R. Tolkien;2002;igen
+A Sötét Torony;Stephen King;1982;igen
+A Kék Fény;Kurt Vonnegut;1969;igen
+A Tűz és Jég Dala;George R.R. Martin;1996;igen
+A Föld alatti Vasút;Colson Whitehead;2016;igen
+Az Éjjeli Őrjárat;Terry Pratchett;1989;igen
+Az Emberi Faj;Yuval Noah Harari;2011;igen
+A Bűn és Bűnhődés;Fjodor Dosztojevszkij;1866;igen
+A Vörös és a Fekete;Stendhal;1830;igen
+A Képzelet Világa;J.K. Rowling;2001;igen
+A Sárkányok Tánca;George R.R. Martin;2011;igen
+A Szépség és a Szörnyeteg;Gabrielle-Suzanne Barbot de Villeneuve;1740;igen
+A Szürke Övezet;Margaret Atwood;1985;igen
+A Kék Fény;Kurt Vonnegut;1969;igen
+A Két Torony;J.R.R. Tolkien;1954;igen
+A Képzelet Világa;J.K. Rowling;2001;igen
+A Tűz és Jég Dala;George R.R. Martin;1996;igen
+A Gyűrűk Ura - A Gyűrű Szövetsége;J.R.R. Tolkien;2002;igen
+A Gyűrűk Ura - A két torony;J.R.R. Tolkien;2002;igen
+A Gyűrűk Ura - A király visszatér;J.R.R. Tolkien;2002;nem
+Harry Potter és a bölcsek köve;J.K. Rowling;1997;igen
+Harry Potter és a Titkok Kamrája;J.K. Rowling;1998;igen
+Harry Potter és a Főnix Rendje;J.K. Rowling;2003;nem
+A Szél Árnyéka;Patrick Rothfuss;2007;igen
+A Hobbit;J.R.R. Tolkien;1937;igen
+1984;George Orwell;1949;igen
+Fahrenheit 451;Ray Bradbury;1953;igen
+Az Alkimista;Paulo Coelho;1988;igen
+A Mester és Margarita;Mihail Bulgakov;1967;igen
+A Kisherceg;Antoine de Saint-Exupéry;1943;igen
+Az Öreg Halász és a Tenger;Ernest Hemingway;1951;igen
+A Gyűrűk Ura - Különleges kiadás;J.R.R. Tolkien;2002;igen
+A Sötét Torony;Stephen King;1982;igen
+A Kék Fény;Kurt Vonnegut;1969;igen
+A Tűz és Jég Dala;George R.R. Martin;1996;igen
+A Föld alatti Vasút;Colson Whitehead;2016;igen
+Az Éjjeli Őrjárat;Terry Pratchett;1989;igen
+Az Emberi Faj;Yuval Noah Harari;2011;igen
+A Bűn és Bűnhődés;Fjodor Dosztojevszkij;1866;igen
+A Vörös és a Fekete;Stendhal;1830;igen
+A Képzelet Világa;J.K. Rowling;2001;igen
+A Sárkányok Tánca;George R.R. Martin;2011;igen
+A Szépség és a Szörnyeteg;Gabrielle-Suzanne Barbot de Villeneuve;1740;igen
+A Szürke Övezet;Margaret Atwood;1985;igen
+A Kék Fény;Kurt Vonnegut;1969;igen
+A Két Torony;J.R.R. Tolkien;1954;igen
+A Képzelet Világa;J.K. Rowling;2001;igen
+A Tűz és Jég Dala;George R.R. Martin;1996;igen

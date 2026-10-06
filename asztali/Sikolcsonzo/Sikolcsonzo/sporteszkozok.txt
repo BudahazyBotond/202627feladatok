@@ -1,0 +1,11 @@
+Tipus;Azonosito;Leiras;Meret;Cipo
+L;RE1;Rossignol Experience 80HD;176
+L;MA1;Majesty Adventure;182
+L;DTA;Dynastar Team Asault;165
+L;AR3;Atomic Redster RJ;130
+L;NDS;Nordica Dobermann Spitfire TI X;168
+B;DC1;DRAKE Charm;147;c
+B;DC2;DRAKE Charm;138
+B;DAR;Dreamscape AllRoad;152
+B;RL1;RAVEN Lupus;157;c
+B;PS5;PATHRON Sensei;153;c

@@ -1,0 +1,20 @@
+Azonosito;Tipus;Megnevezes;ModulokAzonositoi
+p1;p;plüss tigris
+p2;p;plüss mackó
+p3;p;plüss cica
+p4;p;plüss kutya
+p5;p;plüss pingvin
+p6;p;plüss oroszlán
+p7;p;plüss róka
+p8;p;plüss párduc
+k1;k1;interaktív hangvezérlő
+k2;k2;interaktív mozgásvezérlő
+i1;i;interaktív plüss tigris;p1;k1;k2
+i2;i;interaktív plüss cica;p3;k1;k2
+i3;i;interaktív plüss kutya;p4;k1;k2
+j1;j;játék autó
+i4;i;távirányítós játék autó;j1;k2
+b1;b;puha testű játék baba
+b2;b;hajas baba
+j2;j;mozdony vagonokkal
+i5;i;irányítható vonat;j2;k2
