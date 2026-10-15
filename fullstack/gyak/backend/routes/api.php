@@ -23,5 +23,5 @@ Route::get('timetable/stations/origins',[TimetableController::class,"origins"])
 Route::get('timetable/stations/destinations',[TimetableController::class,"destinations"])
 ->name("timetable.destinations");
 
-Route::get('timetable/stations/{from}/{to}',[TimetableController::class,"planner"])
+Route::get('timetable/planner/{from}/{to}',[TimetableController::class,"planner"])
 ->name("timetable.planner")->where("from","[\p{L} \-\.]+")->where("to","[\p{L} \-\.]+");

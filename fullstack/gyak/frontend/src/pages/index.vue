@@ -7,7 +7,7 @@ const counter = useCounter()
 
 <template>
   <BaseLayout>
-    <h1 class="text-6xl my-10">Hello!</h1>
+    <h1 class="text-6xl my-10">home!</h1>
     <button class="bg-blue-500 text-white rounded py-2 px-4" @click="counter.increment()">
       Számláló: {{ counter.counter }}
     </button>
@@ -15,7 +15,7 @@ const counter = useCounter()
 </template>
 
 <route lang="yaml">
-name: index
+name: home
 meta:
-  title: Főoldal
+  title: Startseite
 </route>
