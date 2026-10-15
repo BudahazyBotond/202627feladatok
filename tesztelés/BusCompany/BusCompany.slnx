@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BusCompany_lib/BusCompany_lib.csproj" />
+  <Project Path="BusCompany_tests/BusCompany_tests.csproj" />
+</Solution>
