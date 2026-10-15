@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k46P+756KqA=",
+  "dgSpecHash": "wC6GKYGYPoQ=",
   "success": true,
-  "projectFilePath": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj",
+  "projectFilePath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boton\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\boton\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",

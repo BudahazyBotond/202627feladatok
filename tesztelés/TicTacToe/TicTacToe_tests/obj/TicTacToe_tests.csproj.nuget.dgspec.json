@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj": {}
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj": {}
   },
   "projects": {
-    "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj": {
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj",
+        "projectUniqueName": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj",
         "projectName": "TicTacToe_lib",
-        "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj",
+        "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj",
         "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-        "outputPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_lib\\obj\\",
+        "outputPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -345,14 +345,14 @@
         }
       }
     },
-    "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj": {
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj",
+        "projectUniqueName": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj",
         "projectName": "TicTacToe_tests",
-        "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj",
+        "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_tests\\TicTacToe_tests.csproj",
         "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-        "outputPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_tests\\obj\\",
+        "outputPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -374,8 +374,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj": {
-                "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj"
+              "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj": {
+                "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TicTacToe\\TicTacToe_lib\\TicTacToe_lib.csproj"
               }
             }
           }

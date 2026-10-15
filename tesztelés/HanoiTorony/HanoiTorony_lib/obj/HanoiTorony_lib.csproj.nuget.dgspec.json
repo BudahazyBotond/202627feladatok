@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\suli\\202627feladatok-main\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj": {}
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj": {}
   },
   "projects": {
-    "D:\\suli\\202627feladatok-main\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj": {
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\suli\\202627feladatok-main\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj",
+        "projectUniqueName": "D:\\suli\\202627\\202627feladatok\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj",
         "projectName": "HanoiTorony_lib",
-        "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj",
+        "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\HanoiTorony_lib.csproj",
         "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-        "outputPath": "D:\\suli\\202627feladatok-main\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\obj\\",
+        "outputPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\HanoiTorony\\HanoiTorony_lib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

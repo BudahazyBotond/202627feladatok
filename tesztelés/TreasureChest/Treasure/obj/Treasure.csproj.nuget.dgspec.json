@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj": {}
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj": {}
   },
   "projects": {
-    "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj": {
+    "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj",
+        "projectUniqueName": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj",
         "projectName": "Treasure",
-        "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj",
+        "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj",
         "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-        "outputPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\obj\\",
+        "outputPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

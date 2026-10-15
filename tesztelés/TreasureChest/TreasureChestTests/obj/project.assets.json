@@ -1557,11 +1557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\TreasureChestTests\\TreasureChestTests.csproj",
+      "projectUniqueName": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\TreasureChestTests\\TreasureChestTests.csproj",
       "projectName": "TreasureChestTests",
-      "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\TreasureChestTests\\TreasureChestTests.csproj",
+      "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\TreasureChestTests\\TreasureChestTests.csproj",
       "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-      "outputPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\TreasureChestTests\\obj\\",
+      "outputPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\TreasureChestTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1583,11 +1583,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\TreasueChest\\Chest.csproj": {
-              "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\TreasueChest\\Chest.csproj"
+            "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\TreasueChest\\Chest.csproj": {
+              "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\TreasueChest\\Chest.csproj"
             },
-            "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj": {
-              "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj"
+            "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj": {
+              "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\TreasureChest\\Treasure\\Treasure.csproj"
             }
           }
         }

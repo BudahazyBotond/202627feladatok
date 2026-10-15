@@ -1538,11 +1538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\suli\\202627feladatok-main\\tesztelés\\BusCompany\\BusCompany_tests\\BusCompany_tests.csproj",
+      "projectUniqueName": "D:\\suli\\202627\\202627feladatok\\tesztelés\\BusCompany\\BusCompany_tests\\BusCompany_tests.csproj",
       "projectName": "BusCompany_tests",
-      "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\BusCompany\\BusCompany_tests\\BusCompany_tests.csproj",
+      "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\BusCompany\\BusCompany_tests\\BusCompany_tests.csproj",
       "packagesPath": "C:\\Users\\boton\\.nuget\\packages\\",
-      "outputPath": "D:\\suli\\202627feladatok-main\\tesztelés\\BusCompany\\BusCompany_tests\\obj\\",
+      "outputPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\BusCompany\\BusCompany_tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1564,8 +1564,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\suli\\202627feladatok-main\\tesztelés\\BusCompany\\BusCompany_lib\\BusCompany_lib.csproj": {
-              "projectPath": "D:\\suli\\202627feladatok-main\\tesztelés\\BusCompany\\BusCompany_lib\\BusCompany_lib.csproj"
+            "D:\\suli\\202627\\202627feladatok\\tesztelés\\BusCompany\\BusCompany_lib\\BusCompany_lib.csproj": {
+              "projectPath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\BusCompany\\BusCompany_lib\\BusCompany_lib.csproj"
             }
           }
         }

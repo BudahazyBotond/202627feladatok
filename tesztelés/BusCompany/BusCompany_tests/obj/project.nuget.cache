@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2rO0mCpQdnc=",
+  "dgSpecHash": "NLWLpqbC8r4=",
   "success": true,
-  "projectFilePath": "D:\\suli\\202627feladatok-main\\tesztelés\\BusCompany\\BusCompany_tests\\BusCompany_tests.csproj",
+  "projectFilePath": "D:\\suli\\202627\\202627feladatok\\tesztelés\\BusCompany\\BusCompany_tests\\BusCompany_tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\boton\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
     "C:\\Users\\boton\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
