@@ -1,3 +1,8 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Szepseg_lib
 {
@@ -7,13 +12,12 @@ namespace Szepseg_lib
         public string Nev { get; init; }
         public string Cim { get; init; }
         public string Telefon { get; init; }
-        public Vendeg(int id, string nev, string cim, string tel)
+        public Vendeg(int vendegId, string nev, string cim, string telefon)
         {
-            VendegId = id;
+            VendegId = vendegId;
             Nev = nev;
             Cim = cim;
-            Telefon = tel;
+            Telefon = telefon;
         }
     }
-
 }

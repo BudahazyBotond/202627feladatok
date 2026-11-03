@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szepseg", "Szepseg\Szepseg.csproj", "{A7DCCA0F-5930-49D7-8E80-8B80FB754034}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szepseg_lib", "Szepseg_lib\Szepseg_lib.csproj", "{A50CFAA2-CAE1-4913-815A-EE62758CDC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzepsegGUI", "SzepsegGUI\SzepsegGUI.csproj", "{4C4E2001-A4A8-4FC8-A578-626260322481}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7DCCA0F-5930-49D7-8E80-8B80FB754034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DCCA0F-5930-49D7-8E80-8B80FB754034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DCCA0F-5930-49D7-8E80-8B80FB754034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DCCA0F-5930-49D7-8E80-8B80FB754034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A50CFAA2-CAE1-4913-815A-EE62758CDC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A50CFAA2-CAE1-4913-815A-EE62758CDC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A50CFAA2-CAE1-4913-815A-EE62758CDC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A50CFAA2-CAE1-4913-815A-EE62758CDC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4E2001-A4A8-4FC8-A578-626260322481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4E2001-A4A8-4FC8-A578-626260322481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4E2001-A4A8-4FC8-A578-626260322481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4E2001-A4A8-4FC8-A578-626260322481}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

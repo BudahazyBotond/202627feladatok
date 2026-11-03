@@ -1,25 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Szepseg_lib
 {
     public class Szakmak
     {
-        private List<Szakma> _list;
+        public List<Szakma> _list = new();
         public Szakmak(IEnumerable<Szakma> szakmak)
         {
             _list = szakmak.ToList();
         }
-        public Szakma this[int id]
+        public Szakma this[int szakmaId]
         {
             get
             {
-                if (_list.Find(x => x.SzakmaId == id) == null)
-                {
-                    throw new Exception();
-                }
-                return _list.Find(x => x.SzakmaId == id)!;
+                return _list.Where(x => x.SzakmaId == szakmaId).First();
             }
         }
     }

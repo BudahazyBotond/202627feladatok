@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Szepseg_lib
 {
@@ -12,6 +14,10 @@ namespace Szepseg_lib
         {
             SzakmaId = szakmaId;
             Nev = nev;
+        }
+        public override string ToString()
+        {
+            return Nev;
         }
     }
 }
