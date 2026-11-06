@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24d3cfaf9a36216c064f527045923ba248bd22c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a32fc3e84a14080eb96e4861699b5bddf140946")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
