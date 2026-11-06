@@ -23,9 +23,9 @@ class ProductsSeeder extends Seeder
             $fields = explode("\t",$line);
             $formattedData = [
                 "name" => $fields[0],
-                "price" => $fields[1],
+                "price" => floatval($fields[1]),
                 "unit" => $fields[2],
-                "vat" => $fields[3],
+                "vat" => floatval($fields[3]),
                 "image" => $fields[4]
             ];
             array_push($formatted,$formattedData);
