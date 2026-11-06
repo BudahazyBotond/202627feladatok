@@ -12,8 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('locations', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id()->primary();
+            $table->string("adress",200);
+            $table->time("opening_time");
+            $table->time("closing_time");
+            $table->string("image",50);
+            $table->timestamp("created_at");
+            $table->timestamp("updated_at");
         });
     }
 
