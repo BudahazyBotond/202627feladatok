@@ -40,6 +40,6 @@ class ProductSeeder extends Seeder
             ];
             array_push($formatted,$formattedData);
         }
-        Product::query("products")->insert($formatted);
+        Product::insert($formatted);
     }
 }
