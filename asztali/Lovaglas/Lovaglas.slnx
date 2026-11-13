@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Lovaglas/Lovaglas.csproj" />
+  <Project Path="LovaglasGUI/LovaglasGUI.csproj" />
+  <Project Path="Lovaglas_lib/Lovaglas_lib.csproj" />
+</Solution>
