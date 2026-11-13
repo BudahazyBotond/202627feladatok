@@ -14,7 +14,6 @@ class ProductSeeder extends Seeder
     public function run(): void
     {
         $datas = [
-            "id;name;price;unit;vat;image",
             "1;Kenyér;762.00;kg;0.18;bread.png",
             "2;Csokoládés muffin;393.00;piece;0.27;chocolate-cupcake.png",
             "3;Croissant;338.00;piece;0.18;croissant.png",
@@ -32,11 +31,11 @@ class ProductSeeder extends Seeder
         foreach($datas as $line){
             $fields = explode(";",$line);
             $formattedData = [
-                "name" => $fields[0],
-                "price" => floatval($fields[1]),
-                "unit" => $fields[2],
-                "vat" => floatval($fields[3]),
-                "image" => $fields[4]
+                "name" => $fields[1],
+                "price" => floatval($fields[2]),
+                "unit" => $fields[3],
+                "vat" => floatval($fields[4]),
+                "image" => $fields[5]
             ];
             array_push($formatted,$formattedData);
         }
