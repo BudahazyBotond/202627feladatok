@@ -1,5 +1,5 @@
 zip
-zip -r mappa.zip mappa -x mappa/backend/vendor\* mappa/frontend/node_modules\* mappa/responsive/node_modules\*  
+zip -r mappa.zip . -x ./backend/vendor\* ./frontend/node_modules\* ./responsive/node_modules\*  
 
 git clone https://github.com/rcsnjszg/fullstack2627.git .
 git remote remove origin
