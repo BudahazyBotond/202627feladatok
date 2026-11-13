@@ -17,11 +17,11 @@ class LocationFactory extends Factory
      */
     public function definition(): array
     {
-        $opening = fake()->optional(0.1)->numberBetween(4,10);
+        $opening = fake()->optional(0.9)->numberBetween(4,10);
         return [
             "adress" => fake()->city() . ", " . fake()->streetName() . " utca " . fake()->numberBetween(1,100),
-            "opening_time" => $opening === null ? $opening . ":00" : null,
-            "closing_time" => $opening === null ? fake()->numberBetween(18,22) . ":00" : null,
+            "opening_time" => is_null($opening)? null : ($opening . ":00:00"),
+            "closing_time" => $opening == null ? null : fake()->numberBetween(18,22) . ":00:00",
             "image" => "location-" . fake()->numberBetween(0,9) . ".jpeg"
         ];
     }
