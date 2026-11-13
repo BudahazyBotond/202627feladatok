@@ -22,7 +22,7 @@ class LocationFactory extends Factory
             "adress" => fake()->city() . ", " . fake()->streetName() . " utca " . fake()->numberBetween(1,100),
             "opening_time" => $opening === null ? $opening . ":00" : null,
             "closing_time" => $opening === null ? fake()->numberBetween(18,22) . ":00" : null,
-            "image" => "location-" . fake()->numberBetween() . ".jpeg"
+            "image" => "location-" . fake()->numberBetween(0,9) . ".jpeg"
         ];
     }
 }
