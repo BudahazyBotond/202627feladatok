@@ -4,7 +4,7 @@ import BaseHeader from '@components/layout/BaseHeader.vue'
 
 <template>
   <BaseHeader />
-  <main class="container mx-auto">
+  <main class="container mx-auto max-w-340 px-4 mb-4">
     <slot />
   </main>
 </template>
