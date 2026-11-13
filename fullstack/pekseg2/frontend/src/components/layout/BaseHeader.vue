@@ -12,8 +12,12 @@ const title = import.meta.env.VITE_APP_NAME
 
 const links = [
   {
-    label: 'Page',
+    label: 'Főoldal',
     to: '#'
+  },
+  {
+    label: 'Kínálatunk',
+    to: 'products'
   }
 ]
 </script>
