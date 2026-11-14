@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urhajok", "Urhajok\Urhajok.csproj", "{A86D76A9-EAC5-46D1-850E-085332FFBC96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urhajok_lib", "Urhajok_lib\Urhajok_lib.csproj", "{DBE3FCF1-3D58-4D94-9E58-738D32DB540E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Urhajok_tests", "Urhajok_tests\Urhajok_tests.csproj", "{926345F8-678F-4D8B-9232-ADA73762C6D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A86D76A9-EAC5-46D1-850E-085332FFBC96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86D76A9-EAC5-46D1-850E-085332FFBC96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86D76A9-EAC5-46D1-850E-085332FFBC96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86D76A9-EAC5-46D1-850E-085332FFBC96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBE3FCF1-3D58-4D94-9E58-738D32DB540E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE3FCF1-3D58-4D94-9E58-738D32DB540E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE3FCF1-3D58-4D94-9E58-738D32DB540E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE3FCF1-3D58-4D94-9E58-738D32DB540E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926345F8-678F-4D8B-9232-ADA73762C6D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926345F8-678F-4D8B-9232-ADA73762C6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926345F8-678F-4D8B-9232-ADA73762C6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926345F8-678F-4D8B-9232-ADA73762C6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
