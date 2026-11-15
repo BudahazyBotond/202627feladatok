@@ -39,13 +39,13 @@ const {course} = defineProps({
 
             <div class="flex items-center justify-between border-t border-gray-100 pt-4">
 
-                <RouterLink :to="{name: 'course.show', params: {id:course.id}}" class="block rounded-lg bg-orange-700 px-4 py-2.5 text-center
+                <RouterLink :to="{name: 'courses.show', params: {id:course.id}}" class="block rounded-lg bg-orange-700 px-4 py-2.5 text-center
                 text-sm font-medium text-white transition hover:bg-gray-700">
                     View course
                 </RouterLink>
 
                 <span class="text-xl font-bold text-gray-900">
-                    {{ course.price.toFixed(2) }}
+                    {{ Number(course.price).toFixed(2) }}
                 </span>
             </div>
 

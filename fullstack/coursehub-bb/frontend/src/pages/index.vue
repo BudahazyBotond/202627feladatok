@@ -1,17 +1,27 @@
 <script setup>
+import Box from '@components/Box.vue';
+import CourseCard from '@components/CourseCard.vue';
 import BaseLayout from '@layouts/BaseLayout.vue'
-import { useCounter } from '@stores/CounterStore.js'
+import { api } from '@utils/http.mjs';
+import { onMounted, ref } from 'vue';
+const courses = ref([]);
+const loading = ref(true);
 
-const counter = useCounter()
+async function loadCourses(){
+  const response = await api.get(`/api/courses`);
+  courses.value = response.data.data;
+  loading.value = false;
+}
+
+onMounted(()=>{loadCourses()});
 </script>
 
 <template>
-  <BaseLayout>
-    <h1 class="text-6xl my-10">Hello!</h1>
-    <button class="bg-blue-500 text-white rounded py-2 px-4" @click="counter.increment()">
-      Számláló: {{ counter.counter }}
-    </button>
-  </BaseLayout>
+  <p v-if="loading">Page loading...</p>
+  <Box v-else-if="courses.length == 0" type="warning">No course found.</Box>
+  <div v-else class="courses">
+   <CourseCard v-for="course in courses" :key="course.id" :course></CourseCard> 
+  </div>
 </template>
 
 <route lang="yaml">
