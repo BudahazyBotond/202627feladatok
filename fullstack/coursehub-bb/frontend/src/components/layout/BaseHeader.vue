@@ -11,7 +11,18 @@ import { Sheet, SheetContent, SheetTrigger } from '@components/ui/sheet'
 const title = import.meta.env.VITE_APP_NAME
 
 const links = [
-
+  {
+    to: {name: "index"},
+    label: "Főoldal"
+  },
+  {
+    to: {name: "courses.show", params:{id:1}},
+    label: "Laravel"
+  },
+  {
+    to: {name: "courses.show", params:{id:4}},
+    label: "Vue"
+  },
 ]
 </script>
 

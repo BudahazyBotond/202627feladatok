@@ -4,7 +4,7 @@ import CourseCard from '@components/CourseCard.vue';
 import BaseLayout from '@layouts/BaseLayout.vue'
 import { ucfirst } from '@utils/helper';
 import { api } from '@utils/http.mjs';
-import { onMounted, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 const courses = ref([]);
 const loading = ref(true);
 
@@ -21,9 +21,16 @@ const search = ref({
   name: "",
   level: "",
 });
+
+const filteredCourses = computed(()=>{
+  return courses.value.filter(c=>
+  (search.value.name == "" || c.name.toLowerCase().includes(search.value.name.toLowerCase()))
+  &&(search.value.level=="" || c.level.toLowerCase().includes(search.value.level.toLowerCase())));
+});
 </script>
 
 <template>
+<BaseLayout>
   <form action="" class="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto space-y-5 mt-6">
 
       <div class="flex flex-col space-y-1">
@@ -51,12 +58,14 @@ const search = ref({
       </div>
 
   </form>
-{{ search }}
+
   <p v-if="loading">Page loading...</p>
   <Box v-else-if="courses.length == 0" type="warning">No course found.</Box>
   <div v-else class="courses grid gap-4 md:grid-cols-4">
-   <CourseCard v-for="course in courses" :key="course.id" :course></CourseCard> 
+   <CourseCard v-for="course in filteredCourses" :key="course.id" :course></CourseCard> 
   </div>
+  </BaseLayout>
+
 </template>
 
 <route lang="yaml">
