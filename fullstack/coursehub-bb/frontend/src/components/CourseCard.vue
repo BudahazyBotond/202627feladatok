@@ -31,7 +31,7 @@ const {course} = defineProps({
 
                 <div class="mb-3 flex items-center justify-around flex-col gap-2">
                     <Bubble>{{ course.level }}</Bubble>
-                    <Bubble>{{ course.lessons?.lenght }}</Bubble> lessons
+                    <Bubble>{{ course.lessons?.lenght }} lessons</Bubble>
                 </div>
 
             </div>
