@@ -1,9 +1,12 @@
 <script setup>
+import Bubble from '@components/Bubble.vue';
+
 
 </script>
 
 <template>
-  kurzusok
+  kurzusok 
+  <Bubble>asd</Bubble>  
 </template>
 
 <route lang="yaml">
