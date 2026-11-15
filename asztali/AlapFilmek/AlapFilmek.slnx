@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="AlapFilmek/AlapFilmek.csproj" />
+  <Project Path="AlapFilmek_lib/AlapFilmek_lib.csproj" />
+</Solution>

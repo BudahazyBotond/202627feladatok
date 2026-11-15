@@ -17,5 +17,9 @@ namespace Szepseg_lib
             SzakmaId = szakmaId;
             Telefon = tel;
         }
+        public override string ToString()
+        {
+            return Nev;
+        }
     }
 }

@@ -13,5 +13,9 @@ namespace Szepseg_lib
             SzakmaId = szakmaId;
             Nev = nev;
         }
+        public override string ToString()
+        {
+            return Nev;
+        }
     }
 }

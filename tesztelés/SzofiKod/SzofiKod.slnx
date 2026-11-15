@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="KodTests/KodTests.csproj" />
+  <Project Path="SzofiKod/SzofiKod.csproj" />
+  <Project Path="SzofiKod_lib/SzofiKod_lib.csproj" />
+</Solution>

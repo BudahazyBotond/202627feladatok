@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="SzepsegSzalon/SzepsegSzalon.csproj" />
+  <Project Path="SzepsegWPF/SzepsegWPF.csproj" Id="c3b6caa9-1978-45e8-bdc7-1f93656d3efa" />
   <Project Path="Szepseg_lib/Szepseg_lib.csproj" />
 </Solution>

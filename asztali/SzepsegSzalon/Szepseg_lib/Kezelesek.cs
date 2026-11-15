@@ -11,6 +11,9 @@ namespace Szepseg_lib
         {
             _list = kezelesek.ToList();
         }
+
+        public int Mennyiseg => _list.Count();
+
         public Kezeles this[int id]
         {
             get
