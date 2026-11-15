@@ -1,4 +1,5 @@
 <script setup>
+import Box from '@components/Box.vue';
 import Bubble from '@components/Bubble.vue';
 
 
@@ -7,6 +8,7 @@ import Bubble from '@components/Bubble.vue';
 <template>
   kurzusok 
   <Bubble>asd</Bubble>  
+  <Box type="info"> Info</Box>
 </template>
 
 <route lang="yaml">
