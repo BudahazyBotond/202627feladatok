@@ -17,5 +17,9 @@
         {
             return Nev;
         }
+        public override string ToString()
+        {
+            return Nev;
+        }
     }
 }

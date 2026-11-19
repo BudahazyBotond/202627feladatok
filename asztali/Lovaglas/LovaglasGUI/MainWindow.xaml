@@ -1,0 +1,46 @@
+﻿<Window x:Class="LovaglasGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LovaglasGUI"
+        mc:Ignorable="d"
+        Title="Tanacsadok adatai" Height="325" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Content="Kérem válasszon képzést!"/>
+            <ComboBox x:Name="cb_kepzes" SelectionChanged="cb_kepzes_SelectionChanged"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label x:Name="l_oktato" Content="Kérem válasszon oktatót!" IsEnabled="False"/>
+            <ComboBox x:Name="cb_oktato" IsEnabled="False" SelectionChanged="cb_oktato_SelectionChanged"/>
+        </StackPanel>
+        <GroupBox Grid.Row="2" Header="Az oktatók adatai">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+                <DockPanel Grid.Row="0" >
+                    <Label Content="Telefon: " DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tb_tel" Margin="6" IsReadOnly="True"/>
+                </DockPanel>
+                <DockPanel Grid.Row="1" >
+                    <Label Content="Email: " DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tb_email" Margin="6" IsReadOnly="True"/>
+                </DockPanel>
+                <DockPanel Grid.Row="2" >
+                    <Label Content="Óradíj: " DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tb_oradij" Margin="6" IsReadOnly="True"/>
+                </DockPanel>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
