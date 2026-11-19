@@ -1,0 +1,147 @@
+openapi: "3.1.0"
+info:
+  title: Kaufland API
+  version: 1.0.0
+servers:
+  - url: http://backend.vm1.test
+    description: VM1 backend
+  - url: http://backend.vm2.test
+    description: VM2 backend
+  - url: http://backend.vm3.test
+    description: VM3 backend
+  - url: http://backend.vm4.test
+    description: VM4 backend
+  - url: http://backend.vm5.test
+    description: VM5 backend
+  - url: http://backend.vm6.test
+    description: VM6 backend
+
+paths:
+  /api/products:
+    get:
+      tags:
+        - Product
+      summary: Az összes árucikk lekérése
+      description: |
+        Az `index` visszaadja az összes rekordot a `products` táblából egy `data` kulcsba csomagolva.
+      operationId: products.index
+      responses:
+        '200':
+          description: Árucikkek listája
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+              example: {"data":[{"id":1,"name":"Vanilkov\u00fd cukor 20 kg Intenz\u00edvna vanilkov\u00e1 ar\u00f3ma Ar\u00f3ma na pe\u010denie Cukrovinky \u0160\u013eaha\u010dka GiDel","category":"non-perishables","price":79.99,"discount":null,"free_shipping":1,"image":"1.webp"},{"id":2,"name":"Med MGO\u2122 550+ - Manuka Health - 500g","category":"non-perishables","price":150.99,"discount":null,"free_shipping":0,"image":"2.webp"},{"id":3,"name":"LAO GAN MA Chrumkav\u00e9 chilli v oleji 210g","category":"non-perishables","price":4.29,"discount":0.16,"free_shipping":0,"image":"3.webp"},{"id":4,"name":"Royal Tiger ry\u017ea jazm\u00ednov\u00e1 dlhozrnn\u00e1 18kg","category":"non-perishables","price":92.38,"discount":null,"free_shipping":0,"image":"4.webp"},{"id":5,"name":"Dr. Oetker Vitalis KnusperPlus Double Choc crunchy m\u00fcsli 420g","category":"non-perishables","price":8.9,"discount":null,"free_shipping":0,"image":"5.webp"},{"id":6,"name":"Mutti Polpa Fine - du\u017eina, jemne nasekan\u00e1 400g","category":"non-perishables","price":3.96,"discount":null,"free_shipping":0,"image":"6.webp"},{"id":7,"name":"Finn Crisp Original Tenk\u00fd celozrnn\u00fd ra\u017en\u00fd chlieb s kv\u00e1skom 200g","category":"non-perishables","price":2.08,"discount":null,"free_shipping":0,"image":"7.webp"},{"id":8,"name":"Cestoviny (proso) BEZLEPKOV\u00c9RAMEN 280g - DI\u00c9TNE POTRAVINY","category":"non-perishables","price":8.31,"discount":null,"free_shipping":1,"image":"8.webp"},{"id":9,"name":"Zimmermann Regensburger p\u00e1rky 4 kusy ATG 250g plechovka 550g","category":"non-perishables","price":7.72,"discount":null,"free_shipping":0,"image":"9.webp"},{"id":10,"name":"SodaStream Isotonic Syrup 440ml, 6 kusov","category":"soda syrup","price":26.99,"discount":0.04,"free_shipping":0,"image":"10.webp"},{"id":11,"name":"48 Bolero Sticks 3g instantn\u00fd n\u00e1poj v pr\u00e1\u0161ku bez cukru n\u00edzkokalorick\u00e1 zmes Mix Testovacie balenie ","category":"soda syrup","price":12.79,"discount":null,"free_shipping":0,"image":"11.webp"},{"id":12,"name":"Pepsi sirup bez cukru s pr\u00edchu\u0165ou \u010dere\u0161n\u00ed, 440 ml","category":"soda syrup","price":10.63,"discount":null,"free_shipping":1,"image":"12.webp"},{"id":13,"name":"HORK\u00c1 \u010cOKOL\u00c1DA 75%80 g - VIVANI","category":"chocolate","price":6.51,"discount":0.36,"free_shipping":0,"image":"13.webp"},{"id":14,"name":"Milky Way Crispy Rolls: Kreskav\u00e9 vaflov\u00e9 rol\u00e1ky s nad\u00fdchanou mlie\u010dnou n\u00e1pl\u0148ou a polevou z mlie\u010dnej \u010dokol\u00e1dy 112,5 g","category":"chocolate","price":6.58,"discount":null,"free_shipping":0,"image":"14.webp"},{"id":15,"name":"Milka Luflee alpsk\u00e9 mlieko s mno\u017estvom mal\u00fdch vzduchov\u00fdch bubliniek 90g","category":"chocolate","price":2.13,"discount":null,"free_shipping":0,"image":"15.webp"},{"id":16,"name":"Grand Chocolat - Mand\u013eov\u00fd pomaran\u010d 100g","category":"chocolate","price":2.97,"discount":null,"free_shipping":0,"image":"16.webp"},{"id":17,"name":"Milka Viano\u010dn\u00e9 ty\u010dinky 15 samostatne balen\u00fdch mini ty\u010diniek 150g","category":"chocolate","price":12.28,"discount":null,"free_shipping":0,"image":"17.webp"},{"id":18,"name":"Casali ban\u00e1nov\u00e9 marshmallow k\u00fasky s \u010dokol\u00e1dovou polevou 300g","category":"chocolate","price":4.14,"discount":null,"free_shipping":0,"image":"18.webp"},{"id":19,"name":"Milka Vanilkov\u00fd croissant 50 g","category":"chocolate","price":2.38,"discount":0.32,"free_shipping":0,"image":"19.webp"},{"id":20,"name":"Cathedral City Extra Mature Cheddar - Aromatyczny ser cheddar, dojrzewaj\u0105cy 200g","category":"cheese","price":9.37,"discount":0.3,"free_shipping":0,"image":"20.webp"},{"id":21,"name":"Ser wysokobia\u0142kowy Pi\u00f3rko Ceko niskot\u0142uszczowy 225 g","category":"cheese","price":6.45,"discount":0.31,"free_shipping":0,"image":"21.webp"},{"id":22,"name":"Galbani Mascarpone 250 g","category":"cheese","price":3.2,"discount":null,"free_shipping":0,"image":"22.webp"},{"id":23,"name":"Pe\u010den\u00fd syr Camembert 2 x 75 g","category":"cheese","price":6.93,"discount":null,"free_shipping":0,"image":"23.webp"},{"id":24,"name":"Syr Papillon Roquefort z ov\u010dieho mlieka, 100 g","category":"cheese","price":6.29,"discount":0.31,"free_shipping":0,"image":"24.webp"},{"id":25,"name":"Syr Mlekovita Cheddar, pl\u00e1tky, 1 kg","category":"cheese","price":9.55,"discount":null,"free_shipping":0,"image":"25.webp"},{"id":26,"name":"BiFi The Original Turkey Poultry Mini Salami s mor\u010dac\u00edm m\u00e4som 20g","category":"sausage","price":0.78,"discount":null,"free_shipping":0,"image":"26.webp"},{"id":27,"name":"Kabanosy Exclusive z serem Tarczy\u0144ski 105 g","category":"sausage","price":3.91,"discount":0.21,"free_shipping":0,"image":"27.webp"},{"id":28,"name":"Viedensk\u00e1 klob\u00e1sa 180g","category":"sausage","price":8.73,"discount":null,"free_shipping":0,"image":"28.webp"},{"id":29,"name":"Wiener - Minis bez dusitanovej soli 180g","category":"sausage","price":6.28,"discount":null,"free_shipping":0,"image":"29.webp"},{"id":30,"name":"Cantaluppi Tavernerio - Mortadella Classica - V\u00e1kuovo balen\u00e9 - 2,4\/3,1 kg","category":"sausage","price":59.9,"discount":null,"free_shipping":1,"image":"30.webp"},{"id":31,"name":"Kie\u0142baski Bekonowo Serowe w\u0119dzone JBB 190 g","category":"sausage","price":4.06,"discount":0.24,"free_shipping":0,"image":"31.webp"},{"id":32,"name":"Krakowska Sucha Tarczy\u0144ski 330 g","category":"sausage","price":8.09,"discount":0.04,"free_shipping":0,"image":"32.webp"},{"id":33,"name":"Kapsuly Tchibo Cafissimo, espresso, siln\u00e1 k\u00e1va, 96 kusov","category":"coffee","price":47.3,"discount":null,"free_shipping":1,"image":"33.webp"},{"id":34,"name":"Borbone Magica Palermo, hlin\u00edkov\u00e9 kapsuly pre Nespresso - 30 kaps\u00fal","category":"","price":10.45,"discount":null,"free_shipping":0,"image":"34.webp"},{"id":35,"name":"Julius Meinl Lungo Classico, k\u00e1vov\u00e9 kapsuly pre zariadenia Nespresso\u00ae, 30 kusov.","category":"","price":13.2,"discount":null,"free_shipping":0,"image":"35.webp"},{"id":36,"name":"K\u00e1va Starbucks NESS Creamy Vanilla","category":"","price":12.32,"discount":null,"free_shipping":0,"image":"36.webp"}]}
+  /api/products/{id}:
+    get:
+      tags:
+        - Product
+      summary: Egy adott árucikk lekérése
+      description: |
+        A `show` visszaadja egy minon adatait az azonosítója alapján a `products` táblából egy `data` kulcsba csomagolva.
+      operationId: products.show
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: Az árucikk azonosítója
+          schema:
+            type: integer
+            example: 1
+      responses:
+        '200':
+          description: Egy product adata
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+              example: {"data":{"id":1,"name":"Vanilkov\u00fd cukor 20 kg Intenz\u00edvna vanilkov\u00e1 ar\u00f3ma Ar\u00f3ma na pe\u010denie Cukrovinky \u0160\u013eaha\u010dka GiDel","category":"non-perishables","price":79.99,"discount":null,"free_shipping":1,"image":"1.webp"}}
+  /api/products/cheaps:
+    get:
+      tags:
+        - Product
+      summary: Az olcsó árucikkek lekérése
+      description: |
+        A `cheaps` visszaadja az árucikkek adatait ár alapján növekvő sorrendbe rendezve a `products` táblából egy `data` kulcsba csomagolva.
+      operationId: products.cheaps
+      responses:
+        '200':
+          description: A top 3 product adata
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+              example: {"data":[{"id":26,"name":"BiFi The Original Turkey Poultry Mini Salami s mor\u010dac\u00edm m\u00e4som 20g","category":"sausage","price":0.78,"discount":null,"free_shipping":0,"image":"26.webp"},{"id":7,"name":"Finn Crisp Original Tenk\u00fd celozrnn\u00fd ra\u017en\u00fd chlieb s kv\u00e1skom 200g","category":"non-perishables","price":2.08,"discount":null,"free_shipping":0,"image":"7.webp"},{"id":15,"name":"Milka Luflee alpsk\u00e9 mlieko s mno\u017estvom mal\u00fdch vzduchov\u00fdch bubliniek 90g","category":"chocolate","price":2.13,"discount":null,"free_shipping":0,"image":"15.webp"},{"id":19,"name":"Milka Vanilkov\u00fd croissant 50 g","category":"chocolate","price":2.38,"discount":0.32,"free_shipping":0,"image":"19.webp"},{"id":16,"name":"Grand Chocolat - Mand\u013eov\u00fd pomaran\u010d 100g","category":"chocolate","price":2.97,"discount":null,"free_shipping":0,"image":"16.webp"},{"id":22,"name":"Galbani Mascarpone 250 g","category":"cheese","price":3.2,"discount":null,"free_shipping":0,"image":"22.webp"},{"id":27,"name":"Kabanosy Exclusive z serem Tarczy\u0144ski 105 g","category":"sausage","price":3.91,"discount":0.21,"free_shipping":0,"image":"27.webp"},{"id":6,"name":"Mutti Polpa Fine - du\u017eina, jemne nasekan\u00e1 400g","category":"non-perishables","price":3.96,"discount":null,"free_shipping":0,"image":"6.webp"},{"id":31,"name":"Kie\u0142baski Bekonowo Serowe w\u0119dzone JBB 190 g","category":"sausage","price":4.06,"discount":0.24,"free_shipping":0,"image":"31.webp"},{"id":18,"name":"Casali ban\u00e1nov\u00e9 marshmallow k\u00fasky s \u010dokol\u00e1dovou polevou 300g","category":"chocolate","price":4.14,"discount":null,"free_shipping":0,"image":"18.webp"},{"id":3,"name":"LAO GAN MA Chrumkav\u00e9 chilli v oleji 210g","category":"non-perishables","price":4.29,"discount":0.16,"free_shipping":0,"image":"3.webp"},{"id":29,"name":"Wiener - Minis bez dusitanovej soli 180g","category":"sausage","price":6.28,"discount":null,"free_shipping":0,"image":"29.webp"},{"id":24,"name":"Syr Papillon Roquefort z ov\u010dieho mlieka, 100 g","category":"cheese","price":6.29,"discount":0.31,"free_shipping":0,"image":"24.webp"},{"id":21,"name":"Ser wysokobia\u0142kowy Pi\u00f3rko Ceko niskot\u0142uszczowy 225 g","category":"cheese","price":6.45,"discount":0.31,"free_shipping":0,"image":"21.webp"},{"id":13,"name":"HORK\u00c1 \u010cOKOL\u00c1DA 75%80 g - VIVANI","category":"chocolate","price":6.51,"discount":0.36,"free_shipping":0,"image":"13.webp"},{"id":14,"name":"Milky Way Crispy Rolls: Kreskav\u00e9 vaflov\u00e9 rol\u00e1ky s nad\u00fdchanou mlie\u010dnou n\u00e1pl\u0148ou a polevou z mlie\u010dnej \u010dokol\u00e1dy 112,5 g","category":"chocolate","price":6.58,"discount":null,"free_shipping":0,"image":"14.webp"},{"id":23,"name":"Pe\u010den\u00fd syr Camembert 2 x 75 g","category":"cheese","price":6.93,"discount":null,"free_shipping":0,"image":"23.webp"},{"id":9,"name":"Zimmermann Regensburger p\u00e1rky 4 kusy ATG 250g plechovka 550g","category":"non-perishables","price":7.72,"discount":null,"free_shipping":0,"image":"9.webp"},{"id":32,"name":"Krakowska Sucha Tarczy\u0144ski 330 g","category":"sausage","price":8.09,"discount":0.04,"free_shipping":0,"image":"32.webp"},{"id":8,"name":"Cestoviny (proso) BEZLEPKOV\u00c9RAMEN 280g - DI\u00c9TNE POTRAVINY","category":"non-perishables","price":8.31,"discount":null,"free_shipping":1,"image":"8.webp"},{"id":28,"name":"Viedensk\u00e1 klob\u00e1sa 180g","category":"sausage","price":8.73,"discount":null,"free_shipping":0,"image":"28.webp"},{"id":5,"name":"Dr. Oetker Vitalis KnusperPlus Double Choc crunchy m\u00fcsli 420g","category":"non-perishables","price":8.9,"discount":null,"free_shipping":0,"image":"5.webp"},{"id":20,"name":"Cathedral City Extra Mature Cheddar - Aromatyczny ser cheddar, dojrzewaj\u0105cy 200g","category":"cheese","price":9.37,"discount":0.3,"free_shipping":0,"image":"20.webp"},{"id":25,"name":"Syr Mlekovita Cheddar, pl\u00e1tky, 1 kg","category":"cheese","price":9.55,"discount":null,"free_shipping":0,"image":"25.webp"},{"id":34,"name":"Borbone Magica Palermo, hlin\u00edkov\u00e9 kapsuly pre Nespresso - 30 kaps\u00fal","category":"","price":10.45,"discount":null,"free_shipping":0,"image":"34.webp"},{"id":12,"name":"Pepsi sirup bez cukru s pr\u00edchu\u0165ou \u010dere\u0161n\u00ed, 440 ml","category":"soda syrup","price":10.63,"discount":null,"free_shipping":1,"image":"12.webp"},{"id":17,"name":"Milka Viano\u010dn\u00e9 ty\u010dinky 15 samostatne balen\u00fdch mini ty\u010diniek 150g","category":"chocolate","price":12.28,"discount":null,"free_shipping":0,"image":"17.webp"},{"id":36,"name":"K\u00e1va Starbucks NESS Creamy Vanilla","category":"","price":12.32,"discount":null,"free_shipping":0,"image":"36.webp"},{"id":11,"name":"48 Bolero Sticks 3g instantn\u00fd n\u00e1poj v pr\u00e1\u0161ku bez cukru n\u00edzkokalorick\u00e1 zmes Mix Testovacie balenie ","category":"soda syrup","price":12.79,"discount":null,"free_shipping":0,"image":"11.webp"},{"id":35,"name":"Julius Meinl Lungo Classico, k\u00e1vov\u00e9 kapsuly pre zariadenia Nespresso\u00ae, 30 kusov.","category":"","price":13.2,"discount":null,"free_shipping":0,"image":"35.webp"},{"id":10,"name":"SodaStream Isotonic Syrup 440ml, 6 kusov","category":"soda syrup","price":26.99,"discount":0.04,"free_shipping":0,"image":"10.webp"},{"id":33,"name":"Kapsuly Tchibo Cafissimo, espresso, siln\u00e1 k\u00e1va, 96 kusov","category":"coffee","price":47.3,"discount":null,"free_shipping":1,"image":"33.webp"},{"id":30,"name":"Cantaluppi Tavernerio - Mortadella Classica - V\u00e1kuovo balen\u00e9 - 2,4\/3,1 kg","category":"sausage","price":59.9,"discount":null,"free_shipping":1,"image":"30.webp"},{"id":1,"name":"Vanilkov\u00fd cukor 20 kg Intenz\u00edvna vanilkov\u00e1 ar\u00f3ma Ar\u00f3ma na pe\u010denie Cukrovinky \u0160\u013eaha\u010dka GiDel","category":"non-perishables","price":79.99,"discount":null,"free_shipping":1,"image":"1.webp"},{"id":4,"name":"Royal Tiger ry\u017ea jazm\u00ednov\u00e1 dlhozrnn\u00e1 18kg","category":"non-perishables","price":92.38,"discount":null,"free_shipping":0,"image":"4.webp"},{"id":2,"name":"Med MGO\u2122 550+ - Manuka Health - 500g","category":"non-perishables","price":150.99,"discount":null,"free_shipping":0,"image":"2.webp"}]}
+  /api/products/sum:
+    get:
+      tags:
+        - Product
+      summary: Az árucikkek összértékének lekérése
+      description: |
+        A `sum` visszaadja annak az árucikkek összárát a `products` táblából egy `data` kulcsba csomagolva.
+      operationId: products.sum
+      responses:
+        '200':
+          description: Az árucikkek összára
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: string
+              example: {"data":662.83}
+  /api/products/recommended:
+    get:
+      tags:
+        - Product
+      summary: A javasolt árucikkek lekérése
+      description: |
+        Az `recommended` visszaadja az összes árucikk azonsoítóját és nevét a `products` táblából egy `data` kulcsba csomagolva, amelyek akciósak és 20 eurónál kevesebbe kerülnek.
+      operationId: products.recommended
+      responses:
+        '200':
+          description: Az javasolt árucikkek azonostói és nevei
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+              example: {"data":{"3":"LAO GAN MA Chrumkav\u00e9 chilli v oleji 210g","13":"HORK\u00c1 \u010cOKOL\u00c1DA 75%80 g - VIVANI","19":"Milka Vanilkov\u00fd croissant 50 g","20":"Cathedral City Extra Mature Cheddar - Aromatyczny ser cheddar, dojrzewaj\u0105cy 200g","21":"Ser wysokobia\u0142kowy Pi\u00f3rko Ceko niskot\u0142uszczowy 225 g","24":"Syr Papillon Roquefort z ov\u010dieho mlieka, 100 g","27":"Kabanosy Exclusive z serem Tarczy\u0144ski 105 g","31":"Kie\u0142baski Bekonowo Serowe w\u0119dzone JBB 190 g","32":"Krakowska Sucha Tarczy\u0144ski 330 g"}}
+  /api/products/discounted:
+    get:
+      tags:
+        - Product
+      summary: Az akciós árucikkek lekérése
+      description: |
+        A `discounted` visszaadja azoknak a árucikkeknek adatait a `products` táblából egy `data` kulcsba csomagolva, amelyek akcíiósak.
+      operationId: products.discounted
+      parameters:
+        - name: category
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Az árucikkek adatai, ha nincs query paraméter
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+              example: {"data":[{"id":3,"name":"LAO GAN MA Chrumkav\u00e9 chilli v oleji 210g","category":"non-perishables","price":4.29,"discount":0.16,"free_shipping":0,"image":"3.webp"},{"id":10,"name":"SodaStream Isotonic Syrup 440ml, 6 kusov","category":"soda syrup","price":26.99,"discount":0.04,"free_shipping":0,"image":"10.webp"},{"id":13,"name":"HORK\u00c1 \u010cOKOL\u00c1DA 75%80 g - VIVANI","category":"chocolate","price":6.51,"discount":0.36,"free_shipping":0,"image":"13.webp"},{"id":19,"name":"Milka Vanilkov\u00fd croissant 50 g","category":"chocolate","price":2.38,"discount":0.32,"free_shipping":0,"image":"19.webp"},{"id":20,"name":"Cathedral City Extra Mature Cheddar - Aromatyczny ser cheddar, dojrzewaj\u0105cy 200g","category":"cheese","price":9.37,"discount":0.3,"free_shipping":0,"image":"20.webp"},{"id":21,"name":"Ser wysokobia\u0142kowy Pi\u00f3rko Ceko niskot\u0142uszczowy 225 g","category":"cheese","price":6.45,"discount":0.31,"free_shipping":0,"image":"21.webp"},{"id":24,"name":"Syr Papillon Roquefort z ov\u010dieho mlieka, 100 g","category":"cheese","price":6.29,"discount":0.31,"free_shipping":0,"image":"24.webp"},{"id":27,"name":"Kabanosy Exclusive z serem Tarczy\u0144ski 105 g","category":"sausage","price":3.91,"discount":0.21,"free_shipping":0,"image":"27.webp"},{"id":31,"name":"Kie\u0142baski Bekonowo Serowe w\u0119dzone JBB 190 g","category":"sausage","price":4.06,"discount":0.24,"free_shipping":0,"image":"31.webp"},{"id":32,"name":"Krakowska Sucha Tarczy\u0144ski 330 g","category":"sausage","price":8.09,"discount":0.04,"free_shipping":0,"image":"32.webp"}]}
