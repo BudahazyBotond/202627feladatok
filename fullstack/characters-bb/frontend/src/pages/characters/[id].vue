@@ -1,13 +1,26 @@
 <script setup>
 import BaseLayout from '@layouts/BaseLayout.vue'; 
 import UserSparkIcon from '@components/UserSparkIcon.vue';
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { api } from '@utils/http.mjs';
 
+const route = useRoute();
 const character = ref({});
-
 const loading = ref(true);
 
-const isMainCharacter = computed(() => false);
+
+async function getCharacter(){
+    const res = await api.get(`/characters/` + route.params.id);
+    character.value = res.data.data;
+    loading.value = false;
+}
+
+onMounted(()=>getCharacter());
+
+const isMainCharacter = computed(() => {
+    return character.value.type  == "főszereplő" ? true : false;
+});
 </script>
 
 <template>

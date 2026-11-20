@@ -2,11 +2,20 @@
 import BaseLayout from '@layouts/BaseLayout.vue';
 import CharacterCard from '@components/CharacterCard.vue';
 import CharacterCardSkeleton from '@components/CharacterCardSkeleton.vue';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
+import { api } from '@utils/http.mjs';
 
 const characters = ref([]);
-
 const loading = ref(true);
+
+async function getCharacters(){
+    const res = await api.get(`/characters`);
+    characters.value = res.data.data;
+    loading.value = false;
+}
+
+onMounted(()=>getCharacters());
+
 </script>
 
 <template>
