@@ -8,17 +8,26 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 const errorToast = useErrorToast();
-function createCharacter(data){
-    const res = api.post(`/characters`,data);
-    return res.status;
+async function createCharacter(data){
+    const res = await api.post(`/characters`,data);
+    return res.status === 201;
 }
 
 function handleSubmit(data){
-    createCharacter(data);
-    router.push({name:"characters.index"})
+    createCharacter(data)
+        .then((e)=>{
+            if(e){
+                router.push({name:"characters.index"});
+            }
+            else error();
+        })
+            
+        
 }
 
-
+function error(){
+    errorToast.showError("Nem sikerült létrehozni a karaktert!")
+}
 
 </script>
 

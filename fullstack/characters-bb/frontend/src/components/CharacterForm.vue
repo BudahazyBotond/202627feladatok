@@ -41,7 +41,7 @@ onMounted(()=>{
 })
 
 function handleSubmit(){
-    emit("submit",data);
+    emit("submit",data.value);
 }
 
 </script>
@@ -49,7 +49,7 @@ function handleSubmit(){
 <template>
     <form @submit.prevent="handleSubmit" class="grid md:grid-cols-6 gap-4 px-6 pt-6 pb-8 rounded bg-gray-900">
         <Input v-model="data.name" label="Név" type="text" name="name" required :maxlength="50" class="md:col-span-3" />
-        <Select  v-model="organizations[data.organization_id]" label="Szervezet" name="organization" :items="organizationsMapped" required class="md:col-span-3" />
+        <Select  v-model="data.organization_id" label="Szervezet" name="organization" :items="organizationsMapped" required class="md:col-span-3" />
         <TextArea  v-model="data.description" label="Leírás" name="description" required :maxlength="60000" :rows="4" class="col-span-full" />
         <Select  v-model="data.type" label="Típus" name="type" :items="types" required class="md:col-span-2" />
         <Input  v-model="data.occupation" label="Foglalkozása" type="text" name="occupation" required :maxlength="20" class="md:col-span-2" />
